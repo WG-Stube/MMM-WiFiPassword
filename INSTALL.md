@@ -1,4 +1,4 @@
-# Installation Gesichtserkennung
+# Installation WIFI Passwort
 
 ## Manuelle Installation
 
@@ -22,3 +22,10 @@
       }
   },
 ```
+
+4. Nano schliessen mit `CTRL+O` und `CTRL+X`
+
+5. Mirror starten zum testen 
+- `cd ~/MagicMirror`
+- `npm run start`
+
