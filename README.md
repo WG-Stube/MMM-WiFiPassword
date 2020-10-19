@@ -46,6 +46,7 @@ modules:[
 | `hiddenId`  | Whether your SSID is hidden. `true` `false` | false |
 | `header`  | Custom header text.  | Local WiFi Details | 
 | `layoutVertical`  | Whether to display in vertical (`true`), or horizontal (`false`) mode.  | true |
+| `showQRCode`  | Show QR Code. `true` `false`| true |
 | `showNetwork`  | Show network SSID. `true` `false`| true |
 | `showPassword`  | Show your network password. `true` `false` | true |
 | `showAuthType`  | Show your authentication type. `true` `false` | true |
