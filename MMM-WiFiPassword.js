@@ -9,6 +9,7 @@ Module.register("MMM-WiFiPassword", {
 	  header: "Local WiFi Details", // Default heading
 	  hiddenId: false, // Whether your Network ID is hidden
 	  layoutVertical: true, // Whether to display in vertical (true), or horizontal (false) mode. 
+	  showQRCode: true, // Wether to show QR Code
 	  showNetwork: true, // Display network name
 	  showPassword: true, // Display password
 	  showAuthType: true, // Dispay authentication type
@@ -54,16 +55,18 @@ Module.register("MMM-WiFiPassword", {
 	  header.innerHTML = this.config.header;
 	  div.appendChild(header);
 	  
-	  var qrDiv = document.createElement("div");
-	  qrDiv.id = "qrdiv";
-	  qrDiv.className = "qr-image";
-	  qrDiv.style = "width=" + this.config.qrSize + "px";
-	  if (this.config.layoutVertical) {
-		qrDiv.className += " layout-vertical";
-	  } else {
-		qrDiv.className += " layout-horizontal";
-	  }  
-	  div.appendChild(qrDiv);
+	  if (this.config.showQRCode) {
+		  var qrDiv = document.createElement("div");
+		  qrDiv.id = "qrdiv";
+		  qrDiv.className = "qr-image";
+		  qrDiv.style = "width=" + this.config.qrSize + "px";
+		  if (this.config.layoutVertical) {
+			qrDiv.className += " layout-vertical";
+		  } else {
+			qrDiv.className += " layout-horizontal";
+		  }  
+		  div.appendChild(qrDiv);
+	  }
 
 	  var textDiv = document.createElement("div");
 	  textDiv.id = "textDiv";
