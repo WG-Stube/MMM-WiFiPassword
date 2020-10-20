@@ -6,7 +6,7 @@
 `cd ~/MagicMirror/modules`
 
 2. Erweiterung herunterladen und installieren
-`git clone https://github.com/TeraTech/MMM-WiFiPassword.git``
+`git clone https://github.com/WG-Stube/MMM-WiFiPassword.git``
 
 3. Modul einrichten
  `nano ~/MagicMirror/config/config.js`
